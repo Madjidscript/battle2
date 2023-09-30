@@ -1,17 +1,20 @@
 let bdDonner = JSON.parse(localStorage.getItem("info")) || [];
+let sesion = JSON.parse(sessionStorage.getItem("sesion")) || [];
 
 console.log(bdDonner);
 
 function afficheDataCont() {
   let html = "";
-  bdDonner.forEach((element) => {
-    html += `
-    <tr>
-      <td>${element.metier} </td>
-      <td>${element.age} </td>
-      <td>${element.salaire} </td>
-      
-    </tr>`;
+  bdDonner.find((element) => {
+    if (element.userid === sesion.email) {
+      html += `
+      <tr>
+        <td>${element.metier} </td>
+        <td>${element.age} </td>
+        <td>${element.salaire} </td>
+        
+      </tr>`;
+    }
   });
 
   document.querySelector("#insert").innerHTML = html;
