@@ -26,7 +26,7 @@
   text-align: center;
   padding: 15px 15px;
   border-radius: 10px;
-  box-shadow: inset -2px 2px 2px #00c853;
+  /* box-shadow: inset -2px 2px 2px #00c853; */
 }
 form .input {
   display: flex;

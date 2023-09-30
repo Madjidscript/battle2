@@ -57,3 +57,10 @@ body {
   font-size: 25px;
   color: #00c853;
 }
+button {
+  background-color: #322b4c;
+  padding: 10px;
+  color: white;
+  outline: none;
+  border-radius: 5px;
+}

@@ -1,4 +1,4 @@
-let userconnect = JSON.parse(localStorage.getItem("sesion")) || [];
+let userconnect = JSON.parse(sessionStorage.getItem("sesion")) || [];
 console.log(userconnect);
 
 // let nomEdit = document.querySelector(".nom");

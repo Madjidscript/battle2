@@ -22,6 +22,8 @@ let inputBouton = document.querySelector(".submit");
 function envoie() {
   //e.preventDefault();
   let bdUtilisateur = JSON.parse(localStorage.getItem("info")) || [];
+  //let sesion = JSON.parse(sessionStorage.getItem("sesion")) || [];
+  console.log(sesion);
   let metier = document.querySelector("#metier").value;
   let age = document.querySelector("#age").value;
   let salaire = document.querySelector("#salaire").value;
@@ -31,6 +33,7 @@ function envoie() {
     metier: metier,
     age: age,
     salaire: salaire,
+    //userid:sesion.email
   };
   bdUtilisateur.push(utilisateur);
   localStorage.setItem("info", JSON.stringify(bdUtilisateur));

@@ -10,8 +10,8 @@ form.addEventListener("submit", (e) => {
   bdUser.forEach((user) => {
     console.log("user");
     if (
-      document.querySelector(".email").value === user.email &&
-      document.querySelector(".password").value === user.password
+      document.querySelector("#email").value === user.email &&
+      document.querySelector("#password").value === user.password
     ) {
       //   console.log("passserrrrr verif");
       resultat = user;
@@ -21,7 +21,8 @@ form.addEventListener("submit", (e) => {
     if (typeof resultat !== "undefined") {
       //   console.log("passserrrrr");
       window.location.href = "./index.html";
-      localStorage.setItem("sesion", JSON.stringify(resultat));
+      let sesion = sessionStorage.setItem("sesion", JSON.stringify(resultat));
+      console.log(sesion);
     } else {
       window.location.reload();
     }
