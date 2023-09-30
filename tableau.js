@@ -5,13 +5,16 @@ console.log(bdDonner);
 
 function afficheDataCont() {
   let html = "";
-  bdDonner.find((element) => {
+  bdDonner.find((element, index) => {
     if (element.userid === sesion.email) {
       html += `
       <tr>
         <td>${element.metier} </td>
         <td>${element.age} </td>
-        <td>${element.salaire} </td>
+        <td>${element.salaire}</td>
+
+        
+        
         
       </tr>`;
     }
@@ -19,6 +22,11 @@ function afficheDataCont() {
 
   document.querySelector("#insert").innerHTML = html;
   console.log(html);
+}
+function supprimer(sup) {
+  let bdDonne = JSON.parse(localStorage.getItem("info")) || [];
+  bdDonne.slice(sup, 1);
+  localStorage.setItem("info", JSON.stringify(bdDonne));
 }
 
 document.onload = afficheDataCont();
