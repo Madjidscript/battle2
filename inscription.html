@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./inscription.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="cards">
+      <!-- <div class="card1"></div> -->
+      <div class="card2">
+        <div class="croix">
+          <a href="../index.html"><img src="../images/ferme1.png" alt="" /></a>
+        </div>
+        <h3>Inscription</h3>
+        <form>
+          <div class="input">
+            <div class="champs" style="margin-bottom: 60px; margin-top: 25px">
+              <input
+                type="text"
+                name="nom"
+                id="nom"
+                placeholder="   enter votre nom"
+              />
+            </div>
+            <div class="champs" style="margin-bottom: 60px">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="   entrer votre mail"
+              />
+            </div>
+            <div class="champs" style="margin-bottom: 60px">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="  entrer votre mot de pass"
+              />
+            </div>
+
+            <div class="champs">
+              <input type="hidden" name="statut" id="statut" value="statut" />
+            </div>
+          </div>
+          <div>
+            <input type="submit" value="Inscription" class="inscription" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./inscription.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todoliste</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./script.js" />
+  </head>
+
+  <body>
+    <center>
+      <div class="text">
+        <marquee behavior="" direction="">Bienvenue chez Md services</marquee>
+      </div>
+      <form action="">
+        <p>
+          <input type="text" id="metier" placeholder="enter votre metier" />
+        </p>
+        <p><input type="number" id="age" placeholder=" enter votre age" /></p>
+        <p>
+          <input
+            type="number"
+            id="salaire"
+            name=""
+            placeholder="enter votre
+      salaire"
+          />
+        </p>
+        <input type="submit" value="envoyer" class="submit" />
+      </form>
+      <table id="table" class="tableau-style">
+        <thead>
+          <tr>
+            <th>metier</th>
+            <th>age</th>
+            <th>salaire</th>
+          </tr>
+        </thead>
+
+        <tbody id="insert"></tbody>
+      </table>
+      <script src="./script.js"></script>
+      <script src="./tableau.js"></script>
+    </center>
+  </body>
+</html>
